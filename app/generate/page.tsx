@@ -32,7 +32,7 @@ import {
   getGeneratedContentHistory,
   createOrUpdateUser,
 } from "@/utils/db/actions";
-import { TwitterMock } from "@/components/social-mocks/TwitterMock"; 
+import { TwitterMock } from "@/components/social-mocks/TwitterMock";
 import { InstagramMock } from "@/components/social-mocks/InstagramMock";
 import { LinkedInMock } from "@/components/social-mocks/LinkedInMock";
 import Link from "next/link";
@@ -114,22 +114,6 @@ export default function GenerateContent() {
       setHistory(contentHistory);
     }
   };
-
-// const fetchContentHistory = async () => {
-//     if (user?.id) {
-//       try {
-//         const contentHistory = await getGeneratedContentHistory(user.id);
-//         if (contentHistory && Array.isArray(contentHistory)) {
-//           setHistory(contentHistory);
-//         } else {
-//           console.error("Content history is not an array:", contentHistory);
-//         }
-//       } catch (error) {
-//         console.error("Error fetching content history:", error);
-//       }
-//     }
-//   };
-  
 
   const handleGenerate = async () => {
     if (
