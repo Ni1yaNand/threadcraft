@@ -42,3 +42,5 @@ import {
     contentType: varchar("content_type", { length: 50 }).notNull(),
     createdAt: timestamp("created_at").defaultNow().notNull(),
   });
+
+  
