@@ -1,7 +1,7 @@
 import { db } from "./dbConfig";
 import { Users, Subscriptions, GeneratedContent } from "./schema";
 import { eq, sql, and, desc } from "drizzle-orm";
-import { sendWelcomeEmail, initMailtrap } from "../mailtrap";
+import { sendWelcomeEmail,} from "../mailtrap";
 
 export async function updateUserPoints(userId: string, points: number) {
   try {
@@ -37,6 +37,9 @@ export async function getUserPoints(userId: string) {
     return 0;
   }
 }
+
+
+
 
 export async function createOrUpdateSubscription(
   userId: string,
